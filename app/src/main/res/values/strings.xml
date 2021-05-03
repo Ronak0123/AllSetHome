@@ -10,4 +10,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="booking">My Booking</string>
+    <string name="address">My Address</string>
+    <string name="password">Reset Password</string>
+    <string name="about">About Us</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="contact">Contact Us</string>
+    <string name="terms">Terms and Condition</string>
 </resources>

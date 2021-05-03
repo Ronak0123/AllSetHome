@@ -12,14 +12,45 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.ronak.allsethome.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_booking"
+        android:name="com.ronak.allsethome.ui.booking.My_Booking"
+        android:label="@string/booking"
+        tools:layout="@layout/fragment_booking" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.ronak.allsethome.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_address"
+        android:name="com.ronak.allsethome.ui.address.My_Address"
+        android:label="@string/address"
+        tools:layout="@layout/fragment_address" />
+
+    <fragment
+        android:id="@+id/nav_reset_password"
+        android:name="com.ronak.allsethome.ui.resetpassword.Reset_Password"
+        android:label="@string/password"
+        tools:layout="@layout/fragment_reset_password" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.ronak.allsethome.ui.dynemic.Pages"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_pages" />
+
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.ronak.allsethome.ui.dynemic.Pages"
+        android:label="@string/privacy"
+        tools:layout="@layout/fragment_pages" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.ronak.allsethome.ui.dynemic.Pages"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_pages" />
+
+    <fragment
+        android:id="@+id/nav_terms_and_condition"
+        android:name="com.ronak.allsethome.ui.dynemic.Pages"
+        android:label="@string/terms"
+        tools:layout="@layout/fragment_pages" />
+
 </navigation>

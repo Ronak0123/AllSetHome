@@ -9,12 +9,33 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_booking"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/booking" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_address"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/address" />
+        <item
+            android:id="@+id/nav_reset_password"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/password" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/contact" />
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/privacy" />
+        <item
+            android:id="@+id/nav_terms_and_condition"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/terms" />
     </group>
+
 </menu>

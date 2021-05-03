@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ig_sp_logo"
+            android:layout_width="@dimen/_150sdp"
+            android:elevation="@dimen/_15sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/logo_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontexbold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Glossary"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginBottom="@dimen/_100sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
