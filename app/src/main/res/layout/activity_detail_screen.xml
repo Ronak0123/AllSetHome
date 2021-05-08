@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Detail_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:text="Title"
+            android:fontFamily="@font/fontexbold"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="start"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            app:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="@dimen/_7sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@drawable/ic_news_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/p_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/dis_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/corner_all_star"
+                    android:drawableEnd="@drawable/ic_baseline_local_offer_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/fontexbold"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:textColor="#E14F4F"
+                    android:textSize="@dimen/_9ssp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_baseline_local_offer_24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/p_title_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontex"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Heading Titles"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <LinearLayout
+                        android:id="@+id/i"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/p_rs_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="₹1500"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/fontexbold"
+                            android:gravity="start"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_5sdp" />
+
+                        <TextView
+                            android:id="@+id/p_ord_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="₹1500"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/fontex"
+                            android:gravity="start"
+                            android:textSize="@dimen/_11ssp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="45 Min"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/fontex"
+                            android:gravity="end"
+                            android:textSize="@dimen/_11ssp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fontex"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Please enter your register mobile number and you will receive link on that number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10ssp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        card_view:cardBackgroundColor="@color/lite_orange"
+        card_view:cardCornerRadius="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <Button
+            android:id="@+id/bt_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/fontexbold"
+            android:text="Schedule Appoinment"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
