@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.ronak.allsethome.R
 
 class Reset_Password : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

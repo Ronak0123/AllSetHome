@@ -9,7 +9,6 @@ import com.ronak.allsethome.R
 
 class My_Booking : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
