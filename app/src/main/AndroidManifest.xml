@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllSetHome">
-        <activity android:name=".ui.home.Detail_screen"></activity>
+        <activity android:name=".Map_View"></activity>
+        <activity android:name=".ui.home.Detail_screen" />
         <activity android:name=".ui.home.Sub_Category" />
         <activity
             android:name=".MainActivity"
