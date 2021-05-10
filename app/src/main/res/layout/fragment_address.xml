@@ -11,7 +11,7 @@
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_30sdp"
-        android:background="@color/colorAccent"
+        android:background="@color/lite_orange"
         android:layout_gravity="center|center_vertical"
         android:orientation="horizontal"
         android:weightSum="15">
@@ -62,7 +62,7 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
-                card_view:cardBackgroundColor="@color/purple"
+                card_view:cardBackgroundColor="@color/lite_orange"
                 card_view:cardCornerRadius="@dimen/_20sdp"
                 card_view:cardElevation="@dimen/_2sdp">
 
