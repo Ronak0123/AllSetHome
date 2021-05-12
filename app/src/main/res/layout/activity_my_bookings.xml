@@ -483,23 +483,17 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.core.widget.NestedScrollView
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:fontFamily="@font/fontex"
-                            android:layout_margin="@dimen/_10sdp"
-                            android:text="Home AC Repair: Drainage Issues \n\n
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/fontex"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Home AC Repair: Drainage Issues \n\n
 An air conditioner’s cooling process produces condensation, which normally flows away from the equipment, causing no problem. If there is a clog in the condensate drain lines or drip pan, or if outdoor humidity levels are high, moisture may back up into your air conditioner. Excess condensation will increase indoor humidity levels and hinder the air conditioner’s performance. It could also cause damage to your air conditioner’s components.\n\n\n
 To correct this issue, your home AC repair technician will inspect all condensate lines and the drip pan. The lines will be cleared of clogs, and may be treated for algae growth to prevent future clogs. If air conditioner components have been damaged, your technician will provide you with an estimate to repair this equipment."
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </androidx.core.widget.NestedScrollView>
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
