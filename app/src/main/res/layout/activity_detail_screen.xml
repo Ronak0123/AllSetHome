@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/text"
-            android:text="Title"
+            android:text="AC Repair"
             android:fontFamily="@font/fontexbold"
             android:textSize="@dimen/_14ssp"
             android:gravity="start"
@@ -35,15 +35,20 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_120sdp"
-                android:background="@drawable/ic_news_background"
+                android:layout_height="@dimen/_135sdp"
                 android:gravity="center">
 
                 <ImageView
                     android:id="@+id/p_img_1"
                     android:layout_width="match_parent"
+                    android:background="@drawable/ac"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@drawable/ic_news_background"
+                    android:layout_height="match_parent"/>
 
                 <TextView
                     android:id="@+id/dis_off"
@@ -58,7 +63,8 @@
                     android:paddingStart="@dimen/_5sdp"
                     android:paddingTop="@dimen/_1sdp"
                     android:paddingBottom="@dimen/_1sdp"
-                    android:textColor="#E14F4F"
+                    android:textColor="#003E6E"
+                    android:text="40% Off"
                     android:textSize="@dimen/_9ssp"
                     android:layout_alignParentRight="true"
                     android:paddingLeft="@dimen/_5sdp"
@@ -78,7 +84,7 @@
                         android:fontFamily="@font/fontex"
                         android:ellipsize="end"
                         android:maxLines="1"
-                        android:text="Heading Titles"
+                        android:text="AC Repair"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/_11ssp" />
 
@@ -142,7 +148,9 @@
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/fontex"
                 android:layout_margin="@dimen/_10sdp"
-                android:text="Please enter your register mobile number and you will receive link on that number"
+                android:text="Home AC Repair: Drainage Issues \n\n
+An air conditioner’s cooling process produces condensation, which normally flows away from the equipment, causing no problem. If there is a clog in the condensate drain lines or drip pan, or if outdoor humidity levels are high, moisture may back up into your air conditioner. Excess condensation will increase indoor humidity levels and hinder the air conditioner’s performance. It could also cause damage to your air conditioner’s components.\n\n\n
+To correct this issue, your home AC repair technician will inspect all condensate lines and the drip pan. The lines will be cleared of clogs, and may be treated for algae growth to prevent future clogs. If air conditioner components have been damaged, your technician will provide you with an estimate to repair this equipment."
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_10ssp" />
 
