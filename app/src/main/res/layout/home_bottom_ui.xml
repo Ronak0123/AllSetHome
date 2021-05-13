@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
         app:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="#2893C1DF"
+        card_view:cardBackgroundColor="#5990D3FF"
         card_view:cardCornerRadius="@dimen/_3sdp">
 
         <TextView

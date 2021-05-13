@@ -73,7 +73,7 @@
                 android:ems="10"
                 android:fontFamily="@font/fontex"
                 android:hint="Search Services"
-                android:padding="@dimen/_5sdp"
+                android:padding="@dimen/_6sdp"
                 android:textSize="@dimen/_12ssp" />
 
             <LinearLayout
@@ -106,7 +106,7 @@
                 android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
                 app:cardUseCompatPadding="true"
                 card_view:cardBackgroundColor="@android:color/white"
                 card_view:cardCornerRadius="@dimen/_3sdp">
@@ -135,9 +135,14 @@
 
             </androidx.cardview.widget.CardView>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12sdp"
+                android:background="#DCDCDC"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/id_home_banner"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/_3sdp"/>
