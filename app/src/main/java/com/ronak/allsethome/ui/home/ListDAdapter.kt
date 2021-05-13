@@ -28,15 +28,17 @@ class ListDAdapter(val context: Context) : RecyclerView.Adapter<ListDAdapter.MyV
     }
 
     override fun getItemCount(): Int {
-        return movieList.size
+        return 15
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         holder.card.setOnClickListener{
-            //val intent = Intent(this, Settingts::class.java)
-            //startActivity(intent)
+            val intent = Intent(context, Detail_screen::class.java)
+            context.startActivity(intent)
         }
+
+        holder.title.text = "Service"
 
         /*Glide.with(context)
             .load(movieList.get(position).image)

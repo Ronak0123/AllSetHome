@@ -7,6 +7,7 @@
     tools:context=".ui.booking.My_Booking">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_margin="@dimen/_3sdp"
         android:layout_height="wrap_content"

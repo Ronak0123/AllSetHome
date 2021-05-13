@@ -15,6 +15,9 @@ class HomeFragment : Fragment() {
     lateinit var recyclerView: RecyclerView
     lateinit var recyclerAdapter: ListAdapter
 
+    lateinit var recyclerViewBanner: RecyclerView
+    lateinit var recyclerAdapterBanner: ListAdapterBanner
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -25,8 +28,13 @@ class HomeFragment : Fragment() {
 
         recyclerView = root.findViewById(R.id.recyclerView)
         recyclerAdapter = ListAdapter(requireContext())
-        recyclerView.layoutManager = GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
+        recyclerView.layoutManager = GridLayoutManager(context, 3, GridLayoutManager.VERTICAL, false)
         recyclerView.adapter = recyclerAdapter
+
+        recyclerViewBanner = root.findViewById(R.id.id_home_banner)
+        recyclerAdapterBanner = ListAdapterBanner(requireContext())
+        recyclerViewBanner.layoutManager = LinearLayoutManager(context)
+        recyclerViewBanner.adapter = recyclerAdapterBanner
 
         return root
     }

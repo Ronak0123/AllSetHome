@@ -17,28 +17,28 @@ import com.ronak.allsethome.R
 import com.ronak.allsethome.pojo.order_product_list
 import java.io.Serializable
 
-class ListAdapter(val context: Context) : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
+class ListAdapterBanner(val context: Context) : RecyclerView.Adapter<ListAdapterBanner.MyViewHolder>() {
 
     var movieList: List<order_product_list> = listOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.grid_ui, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.home_bottom_ui, parent, false)
         return MyViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return 12
+        return 3
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         holder.card.setOnClickListener{
-            val intent = Intent(context, Sub_Category::class.java)
+            val intent = Intent(context, Detail_screen::class.java)
             context.startActivity(intent)
         }
 
-        holder.title.text = "Service"
+        holder.title.text = "On 40% off Home Services"
         /*Glide.with(context)
             .load(movieList.get(position).image)
             .apply(RequestOptions().diskCacheStrategy(DiskCacheStrategy.NONE))

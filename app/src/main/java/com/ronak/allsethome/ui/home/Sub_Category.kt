@@ -17,7 +17,7 @@ class Sub_Category : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         recyclerAdapter = ListDAdapter(this)
-        recyclerView.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
+        recyclerView.layoutManager = GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false)
         recyclerView.adapter = recyclerAdapter
 
     }
