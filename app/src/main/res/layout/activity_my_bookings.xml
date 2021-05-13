@@ -166,6 +166,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+                <LinearLayout
+                    android:background="@drawable/corner_all_square"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -375,7 +383,6 @@
 
                     </LinearLayout>
 
-
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_1sdp"
@@ -423,12 +430,7 @@
 
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_1sdp"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginBottom="@dimen/_2sdp"
-                        android:background="#ECECEC" />
+                </LinearLayout>
 
                     <Button
                         android:id="@+id/get_help"
