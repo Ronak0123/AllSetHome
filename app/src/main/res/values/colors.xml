@@ -8,4 +8,5 @@
     <color name="main_blue">#0066FF</color>
     <color name="main_orange">#FF3D00</color>
     <color name="lite_orange">#FBA083</color>
+    <color name="appbg">#F6F1F0</color>
 </resources>
