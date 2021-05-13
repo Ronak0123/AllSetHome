@@ -12,26 +12,24 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ronak.allsethome.R
 import com.ronak.allsethome.pojo.order_product_list
 import java.io.Serializable
 
-class ListAdapterBanner(val context: Context) : RecyclerView.Adapter<ListAdapterBanner.MyViewHolder>() {
+class ListAdapterBanner_two(val context: Context) : RecyclerView.Adapter<ListAdapterBanner_two.MyViewHolder>() {
 
     var movieList: List<order_product_list> = listOf()
-    lateinit var recyclerAdapterBanner: ListAdapterBanner_two
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.home_bottom_ui, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.product_ui, parent, false)
         return MyViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return 1
+        return 4
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
@@ -41,15 +39,11 @@ class ListAdapterBanner(val context: Context) : RecyclerView.Adapter<ListAdapter
             context.startActivity(intent)
         }
 
-        holder.title.text = "Best Deal"
         /*Glide.with(context)
             .load(movieList.get(position).image)
             .apply(RequestOptions().diskCacheStrategy(DiskCacheStrategy.NONE))
             .into(holder.image_icon)*/
 
-        recyclerAdapterBanner = ListAdapterBanner_two(context)
-        holder.recyclerViewBanner.layoutManager =  GridLayoutManager(context, 2, GridLayoutManager.VERTICAL, false)
-        holder.recyclerViewBanner.adapter = recyclerAdapterBanner
     }
 
     fun setMovieListItems(movieList: List<order_product_list>) {
@@ -60,8 +54,6 @@ class ListAdapterBanner(val context: Context) : RecyclerView.Adapter<ListAdapter
     class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
 
         val card: CardView = itemView!!.findViewById(R.id.card)
-        val title: TextView = itemView!!.findViewById(R.id.title)
-        val recyclerViewBanner: RecyclerView = itemView!!.findViewById(R.id.id_Recycleview)
 
     }
 }
