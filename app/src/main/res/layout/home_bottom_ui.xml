@@ -24,30 +24,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:id="@+id/card"
+        android:background="@drawable/corner_view_all"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_15sdp"
-        app:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="#5990D3FF"
-        card_view:cardCornerRadius="@dimen/_3sdp">
+        android:layout_margin="@dimen/_15sdp">
 
         <TextView
             android:textSize="@dimen/_12ssp"
             android:fontFamily="@font/fontex"
             android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_margin="@dimen/_10sdp"
+            android:layout_margin="@dimen/_7sdp"
             android:text="View All"
             android:textColor="@color/blue"
             android:layout_height="wrap_content"/>
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_10sdp"
-        android:background="#DCDCDC"/>
-    
 </LinearLayout>

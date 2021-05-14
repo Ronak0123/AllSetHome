@@ -2,53 +2,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#8DE3E3E3"
     xmlns:app="http://schemas.android.com/tools">
 
-    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
-        app:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="@android:color/white"
-        card_view:cardCornerRadius="@dimen/_7sdp">
+        android:gravity="center"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/main_white"
+        android:orientation="vertical"
+        android:weightSum="4">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:src="@drawable/aci"
+                android:layout_height="@dimen/_45sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontex"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:gravity="center"
-            android:orientation="vertical"
-            android:weightSum="4">
+            android:text="Ac Repair"
+            android:layout_margin="@dimen/_3sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/image"
-                    android:padding="@dimen/_3sdp"
-                    android:layout_width="match_parent"
-                    android:src="@drawable/aci"
-                    android:layout_height="@dimen/_40sdp" />
-
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/fontex"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:gravity="center"
-                android:text="Ac Repair"
-                android:layout_margin="@dimen/_3sdp"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/_10ssp" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </RelativeLayout>

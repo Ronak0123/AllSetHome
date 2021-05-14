@@ -29,7 +29,7 @@
                     android:id="@+id/p_img_1"
                     android:layout_width="match_parent"
                     android:src="@drawable/rf"
-                    android:layout_height="@dimen/_110sdp"
+                    android:layout_height="@dimen/_90sdp"
                     android:scaleType="fitXY" />
 
                 <TextView
@@ -80,10 +80,10 @@
                     android:fontFamily="@font/fontex"
                     android:maxLines="1"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/_11ssp" />
+                    android:textSize="@dimen/_10ssp" />
 
                 <TextView
-                    android:textSize="@dimen/_10ssp"
+                    android:textSize="@dimen/_9ssp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="upto 40% off"

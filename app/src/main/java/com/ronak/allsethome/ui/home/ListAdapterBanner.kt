@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
@@ -59,7 +60,7 @@ class ListAdapterBanner(val context: Context) : RecyclerView.Adapter<ListAdapter
 
     class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
 
-        val card: CardView = itemView!!.findViewById(R.id.card)
+        val card: LinearLayout = itemView!!.findViewById(R.id.card)
         val title: TextView = itemView!!.findViewById(R.id.title)
         val recyclerViewBanner: RecyclerView = itemView!!.findViewById(R.id.id_Recycleview)
 
