@@ -4,195 +4,460 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/appbg"
+    android:background="@color/main_white"
     android:layout_height="match_parent"
     tools:context=".ui.home.Detail_screen">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/text"
-            android:text="AC Repair"
-            android:fontFamily="@font/fontexbold"
-            android:textSize="@dimen/_14ssp"
-            android:gravity="start"
-            android:padding="@dimen/_7sdp"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:textColor="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_3sdp"
-            app:cardUseCompatPadding="true"
-            card_view:cardBackgroundColor="@android:color/white"
-            card_view:cardCornerRadius="@dimen/_7sdp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_135sdp"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/p_img_1"
-                    android:layout_width="match_parent"
-                    android:background="@drawable/ac"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitXY" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:background="@drawable/ic_news_background"
-                    android:layout_height="match_parent"/>
-
-                <TextView
-                    android:id="@+id/dis_off"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:background="@drawable/corner_all_star"
-                    android:drawableEnd="@drawable/ic_baseline_local_offer_24"
-                    android:drawablePadding="@dimen/_5sdp"
-                    android:fontFamily="@font/fontexbold"
-                    android:gravity="center"
-                    android:paddingStart="@dimen/_5sdp"
-                    android:paddingTop="@dimen/_1sdp"
-                    android:paddingBottom="@dimen/_1sdp"
-                    android:textColor="#003E6E"
-                    android:text="40% Off"
-                    android:textSize="@dimen/_9ssp"
-                    android:layout_alignParentRight="true"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:drawableRight="@drawable/ic_baseline_local_offer_24" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/_5sdp"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/p_title_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/fontex"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        android:text="AC Repair"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/_11ssp" />
-
-                    <LinearLayout
-                        android:id="@+id/i"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:orientation="horizontal"
-                        android:weightSum="10">
-
-                        <TextView
-                            android:id="@+id/p_rs_1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:text="₹1500"
-                            android:layout_marginStart="@dimen/_5sdp"
-                            android:textColor="@android:color/white"
-                            android:fontFamily="@font/fontexbold"
-                            android:gravity="start"
-                            android:textSize="@dimen/_12ssp"
-                            android:layout_marginLeft="@dimen/_5sdp" />
-
-                        <TextView
-                            android:id="@+id/p_ord_1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="5"
-                            android:text="₹1500"
-                            android:textColor="@android:color/white"
-                            android:fontFamily="@font/fontex"
-                            android:gravity="start"
-                            android:textSize="@dimen/_11ssp"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="3"
-                            android:text="45 Min"
-                            android:textColor="@android:color/white"
-                            android:fontFamily="@font/fontex"
-                            android:gravity="end"
-                            android:textSize="@dimen/_11ssp"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:rating="4"
-            android:numStars="5"
-            android:stepSize="0.1"
-            android:isIndicator="true"
-            style="?android:attr/ratingBarStyleSmall"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <ScrollView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/fontex"
-                android:layout_margin="@dimen/_10sdp"
-                android:text="Home AC Repair: Drainage Issues \n\n
-An air conditioner’s cooling process produces condensation, which normally flows away from the equipment, causing no problem. If there is a clog in the condensate drain lines or drip pan, or if outdoor humidity levels are high, moisture may back up into your air conditioner. Excess condensation will increase indoor humidity levels and hinder the air conditioner’s performance. It could also cause damage to your air conditioner’s components.\n\n\n
-To correct this issue, your home AC repair technician will inspect all condensate lines and the drip pan. The lines will be cleared of clogs, and may be treated for algae growth to prevent future clogs. If air conditioner components have been damaged, your technician will provide you with an estimate to repair this equipment."
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/_10ssp" />
+                android:orientation="vertical">
 
-        </ScrollView>
+                <TextView
+                    android:text="AC Repair"
+                    android:fontFamily="@font/fontexbold"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="start"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
-    </LinearLayout>
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardCornerRadius="@dimen/_7sdp">
 
-    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        card_view:cardBackgroundColor="@color/lite_orange"
-        card_view:cardCornerRadius="@dimen/_20sdp"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:layout_marginBottom="@dimen/_25sdp"
-        card_view:cardElevation="@dimen/_2sdp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_125sdp"
+                        android:gravity="center">
 
-        <Button
-            android:id="@+id/bt_Submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/fontexbold"
-            android:text="Schedule Appoinment"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+                        <ImageView
+                            android:id="@+id/p_img_1"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/ac"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
 
-    </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@drawable/ic_news_background"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/dis_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/corner_all_star"
+                            android:drawableEnd="@drawable/ic_baseline_local_offer_24"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:fontFamily="@font/fontexbold"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:paddingBottom="@dimen/_1sdp"
+                            android:textColor="#003E6E"
+                            android:text="40% Off"
+                            android:textSize="@dimen/_9ssp"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:drawableRight="@drawable/ic_baseline_local_offer_24" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/p_title_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontexbold"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="1 AC 2 year service"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:layout_gravity="center"
+                        android:tint="@android:color/black"
+                        android:src="@android:drawable/star_off"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="4.5"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontexbold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="16.2k rattings"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontex"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/p_rs_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="₹1500"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/fontexbold"
+                        android:gravity="start"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_marginLeft="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/p_ord_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="₹1500"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/fontex"
+                        android:gravity="start"
+                        android:textSize="@dimen/_10ssp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="45 Min"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/fontex"
+                        android:gravity="end"
+                        android:textSize="@dimen/_11ssp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/fontex"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                card_view:cardBackgroundColor="@color/lite_orange"
+                card_view:cardCornerRadius="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                card_view:cardElevation="@dimen/_2sdp">
+
+                <Button
+                    android:id="@+id/bt_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/fontexbold"
+                    android:text="Schedule Appoinment"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:background="#8DE3E3E3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:fontFamily="@font/fontexbold"
+                    android:gravity="start"
+                    android:text="Customer Review"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/fontexbold"
+                    android:gravity="start"
+                    android:text="What customer say about us."
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible" />
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_2sdp"
+                    app:cardCornerRadius="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_weight="10"
+                            android:weightSum="10">
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="0.2" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="A" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:fontFamily="@font/fontexbold"
+                                    android:gravity="center_vertical"
+                                    android:text="Abraham Lincoln"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_1sdp">
+
+                                    <RatingBar
+                                        android:id="@+id/ratingBar"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:isIndicator="true"
+                                        android:numStars="5"
+                                        android:rating="4"
+                                        android:stepSize="0.1" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="@dimen/_1sdp"
+                                        android:fontFamily="@font/fontexbold"
+                                        android:gravity="center_vertical"
+                                        android:text="4.0"
+                                        android:textColor="@android:color/holo_purple"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/fontex"
+                            android:maxLines="4"
+                            android:text="Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. "
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_2sdp"
+                    app:cardCornerRadius="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_weight="10"
+                            android:weightSum="10">
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="0.2" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="A" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:fontFamily="@font/fontexbold"
+                                    android:gravity="center_vertical"
+                                    android:text="Abraham Lincoln"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_1sdp">
+
+                                    <RatingBar
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:isIndicator="true"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:stepSize="0.1" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="@dimen/_1sdp"
+                                        android:fontFamily="@font/fontexbold"
+                                        android:gravity="center_vertical"
+                                        android:text="5"
+                                        android:textColor="@android:color/holo_purple"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/fontex"
+                            android:maxLines="4"
+                            android:text="Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. "
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
